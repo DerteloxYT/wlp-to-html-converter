@@ -19,5 +19,5 @@ A simple and clean **Python 3 script** that converts **WLP (Web Language Program
 2. Clone this repository or download the files:
 
 ```bash
-git clone https://github.com/YourUsername/wlp-html-converter.git
+git clone https://github.com/DerteloxYT/wlp-html-converter.git
 cd wlp-html-converter
