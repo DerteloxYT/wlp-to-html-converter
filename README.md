@@ -14,7 +14,7 @@ A Python 3 script that converts **WLP (Web Language Program)** files into fully 
 git clone https://github.com/YourUsername/wlp-html-converter.git
 cd wlp-html-converter
 ```
-### You should have:
+## You should have:
 
 wlp_converter.py
 README.md
@@ -22,8 +22,9 @@ No additional libraries are required. ✔️
 
 ##💡 Usage
 Place your WLP file in the project folder (e.g., example.wlp) and run:
-
+```bash
 python wlp_converter.py example.wlp
+```
 The script will generate output.html in the same folder. Open output.html in your browser to see your page. 🎉
 
 The converter interprets WLP syntax, generates HTML elements, applies styles, and preserves onclick events. All elements like textbox, inputtext, and button will work as expected.
