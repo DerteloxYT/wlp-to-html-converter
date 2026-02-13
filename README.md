@@ -1,4 +1,4 @@
-# WLP_App.exe
+# Konwerter WLP -> HTML W Nowej Formie EXE!
 
 ## WLP → HTML Translator
 
