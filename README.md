@@ -1,73 +1,102 @@
-# 🌐 WLP to HTML Converter 🚀
+# WLP_App.exe
 
-![Python Version](https://img.shields.io/badge/python-3.x-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+## WLP → HTML Translator
 
-A Python 3 script that converts **WLP (Web Language Program)** files into fully functional HTML pages. It supports `textbox`, `inputtext`, and `button` elements, including `onclick` JavaScript events, and handles head properties like `title`, `wlp-pro-key`, `background-color`, and `text-color`. The output is clean HTML ready to open in any browser. Perfect for developers, hobbyists, or anyone experimenting with WLP pages. ⚡
+**WLP_App.exe** to aplikacja desktopowa służąca do tłumaczenia plików  
+**WLP (Web Language Program)** na standardowy **HTML**.
 
-## 💾 Installation
+Program posiada graficzny interfejs użytkownika (GUI) i nie wymaga używania terminala.
 
-1. Ensure **Python 3** is installed.  
-2. Clone this repository or download the files:
+---
 
-```bash
-git clone https://github.com/DerteloxYT/wlp-to-html-converter.git
-cd wlp-html-converter
-```
-## You should have:
+## 📌 Funkcje
 
-wlp_converter.py
-README.md
-No additional libraries are required. ✔️
+- Wybór pliku `.wlp`
+- Automatyczna konwersja do `.html`
+- Obsługa:
+  - `title="..."`
+  - `wlp-pro-key="..."`
+  - `background-color="..."`
+  - `text-color="..."`
+  - `textbox(text="...", onclick="...")`
+  - `inputtext(text="...")`
+  - `button(text="...", onclick="...")`
+- Zapisywanie wygenerowanego pliku HTML
+- Prosty i szybki interfejs
 
-💡 Usage
-Place your WLP file in the project folder (e.g., example.wlp) and run:
-```bash
-python wlp_converter.py example.wlp
-```
-The script will generate output.html in the same folder. Open output.html in your browser to see your page. 🎉
+---
 
-The converter interprets WLP syntax, generates HTML elements, applies styles, and preserves onclick events. All elements like textbox, inputtext, and button will work as expected.
+## 🖥 Wymagania
 
-📝 Example WLP
-```bash
+- System Windows 10 / 11
+- Brak potrzeby instalowania Pythona (program jest skompilowany do EXE)
+
+---
+
+## 🚀 Jak używać
+
+1. Uruchom `WLP_App.exe`
+2. Kliknij przycisk wyboru pliku
+3. Wybierz plik `.wlp`
+4. Wskaż miejsce zapisu pliku `.html`
+5. Gotowe ✅
+
+---
+
+## 📂 Przykład pliku WLP
+
+```wlp
 start-web-page;
-page {
-  head {
-    title="Example Page";
-    wlp-pro-key="WLP-demo";
-    style {
-      background-color="#303030";
-      text-color="white";
-    }
-  }
-  appearance {
-    textbox(text="Hello World", onclick="alert('Hello!')");
-    inputtext(text="Type something here");
-    button(text="Click Me", onclick="alert('Clicked!')");
-    textbox(text="Another label example", onclick="console.log('Clicked label')");
-    inputtext(text="Another input field");
-    button(text="Submit", onclick="alert('Form submitted')");
-  }
-}
+
+title="Moja strona";
+background-color="black";
+text-color="white";
+
+textbox(text="Witaj świecie!");
+button(text="Kliknij mnie");
+
 code-end;
 ```
-This example generates an HTML page with 🌟 dark background, white text 🌑, multiple labels with clickable JS events ✨, input fields 🖊️, and buttons that trigger alerts or JS functions ✅.
 
-⚠️ Notes
-Ensure WLP syntax is correct. Invalid syntax may cause errors.
+Po konwersji powstanie poprawny plik HTML.
 
-onclick events must contain valid JavaScript.
+---
 
-Currently supports textbox, inputtext, and button.
+## 📜 Struktura WLP
 
-CSS styles in WLP automatically apply to HTML.
+Plik musi zaczynać się od:
 
-Compatible with modern browsers: Chrome, Firefox, Edge, Safari.
+```
+start-web-page;
+```
 
-🎨 Advanced Usage
-You can create complex pages with multiple elements, grouped logically, with styles and JS events. Large WLP files are supported. The converter outputs fully self-contained HTML. Ideal for prototyping WLP projects or learning WLP web design. 🚀
+i kończyć:
 
-📜 License
-This project is licensed under the MIT License 🛡️.
-Enjoy converting your WLP files to HTML! 🎉💻
+```
+code-end;
+```
+
+---
+
+## ⚠ Uwagi
+
+- Program może nadpisać istniejący plik, jeśli wybierzesz tę samą nazwę.
+- Obsługiwane są podstawowe funkcje WLP 1.0.
+- Program nie interpretuje JavaScript — jedynie przekazuje go do HTML.
+
+---
+
+## 🔮 Planowane funkcje (WLP 2.0)
+
+- Obsługa `<div>`
+- Obsługa obrazów
+- Klasy CSS
+- Lepsze bezpieczeństwo
+- Tryb PRO
+
+---
+
+## 👨‍💻 Autor
+
+Projekt: **Web Language Program (WLP)**  
+Silnik: **WLP_App.exe**
