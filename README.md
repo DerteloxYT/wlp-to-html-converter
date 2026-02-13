@@ -47,14 +47,17 @@ Program posiada graficzny interfejs użytkownika (GUI) i nie wymaga używania te
 
 ```wlp
 start-web-page;
-
-title="Moja strona";
-background-color="black";
-text-color="white";
-
-textbox(text="Witaj świecie!");
-button(text="Kliknij mnie");
-
+page {
+  head {
+    title="Moja strona";
+    background-color="black";
+    text-color="white";
+  }
+  body {
+    textbox(text="Witaj świecie!");
+    button(text="Kliknij mnie");
+  }
+}
 code-end;
 ```
 
